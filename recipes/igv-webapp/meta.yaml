@@ -1,0 +1,29 @@
+{% set version = "1.0.1" %}
+
+package:
+  name: igv-webapp
+  version: {{ version }}
+
+source:
+  url: https://github.com/igvteam/igv-webapp/archive/v{{ version }}.zip 
+  sha256: 79ba3027bf5d83da6a5475bcbad762288e051daf030f7b12ee62e6b975972f75
+
+build:
+  number: 1
+  noarch: generic
+
+requirements:
+  run:
+    - nodejs
+    - nodeenv
+
+
+about:
+  home: https://github.com/igvteam/igv-webapp
+  summary: igv-webapp is a pure-client "genome browser" application based igv.js
+  license: MIT License
+  license_family: MIT
+
+extra:
+  identifiers:
+    - biotools:igv-webapp

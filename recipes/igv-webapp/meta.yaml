@@ -16,11 +16,16 @@ requirements:
   run:
     - nodejs
     - nodeenv
+    - grunt
+
+test:
+  command:
+    - npm version | grep igv-webapp
 
 
 about:
   home: https://github.com/igvteam/igv-webapp
-  summary: igv-webapp is a pure-client "genome browser" application based igv.js
+  summary: igv-webapp is a pure-client "genome browser" application based on igv.js
   license: MIT License
   license_family: MIT
 

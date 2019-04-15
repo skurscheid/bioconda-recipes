@@ -1,22 +1,19 @@
 {% set version = "0.5" %}
-{% set name = "Genrich" %}
 
 package:
-  name: {{ name }}
+  name: genrich
   version: {{ version }}
 
 build:
   number: 0
-  skip: True  # [osx]
 
 source:
-  url: https://github.com/jsh58/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/jsh58/Genrich/archive/v{{ version }}.tar.gz
   sha256: 88491354ad1149847ef80bfedf06478087142ac3d0f7b72ebd9779c455afb87a
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - autoconf
   host:
     - zlib
   run:
@@ -29,5 +26,5 @@ test:
 about:
   home: https://github.com/jsh58/Genrich
   license: MIT
-  summary: Genrich is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq). It analyzes alignment files generated following the assay and produces a file detailing peaks of significant enrichment. 
+  summary: Genrich is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq).
 

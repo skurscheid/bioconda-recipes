@@ -4,6 +4,9 @@ package:
   name: genrich
   version: {{ version }}
 
+build:
+  number: 0
+
 source:
   url: https://github.com/jsh58/Genrich/archive/v{{ version }}.tar.gz
   sha256: 88491354ad1149847ef80bfedf06478087142ac3d0f7b72ebd9779c455afb87a
@@ -11,7 +14,6 @@ source:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - zlib
   host:
     - zlib
   run:

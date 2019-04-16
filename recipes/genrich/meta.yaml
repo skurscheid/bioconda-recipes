@@ -21,10 +21,13 @@ requirements:
 
 test:
   commands:
-  - Genrich -h
+    - Genrich -h
 
 about:
   home: https://github.com/jsh58/Genrich
   license: MIT
   summary: Genrich is a peak-caller for genomic enrichment assays (e.g. ChIP-seq, ATAC-seq).
 
+extra:
+  identifiers:
+    - biotools:genrich
